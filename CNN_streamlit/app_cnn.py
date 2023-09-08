@@ -121,7 +121,7 @@ def main():
         brightness_range=(0.5, 1.5))""")
     st.write("Train dataset was fited with Image generator at batch_size=32 and the three models were computed and fited again with the new train dataset augmented.")
     ##results data augmentation
-    image3 = "/CNN_streamlit/CNN_graphs/CNN_Results_Data_Augmentation.jpg" 
+    image3 = "CNN_streamlit/CNN_graphs/CNN_Results_Data_Augmentation.jpg" 
     st.write("**Figure 3 :** Results obtained on the accuracy in test and train dataset over the 25 epochs for the three CNN model.")
     st.image(image3, caption="", use_column_width=False)
     st.write("Really bad results were obtained as seen in **Figure 3** appart from Model 3 which was highly overfitting from very first epoch. Therefore it seems that augmentation on our model **did not** improved accuracy and performance.")
@@ -134,7 +134,7 @@ def main():
     X_resampled, y_resampled = smote.fit_resample(X, y)
     Class distribution after SMOTE resampling: {0: 6705, 1: 6705, 2: 6705, 3: 6705, 4: 6705, 5: 6705, 6: 6705}""")
     ##Results balanced dataset
-    image4 = "/CNN_streamlit/CNN_graphs/CNN_Results_Balanced_data.jpg" 
+    image4 = "CNN_streamlit/CNN_graphs/CNN_Results_Balanced_data.jpg" 
     st.write("**Figure 4 :** Results obtained on the accuracy in oversampled dataset over  25 epochs for two CNN models selected (Model1 & Model3).")
     st.image(image4, caption="", use_column_width=False)
     st.write("Very good results were obtained on both models with data oversampled. However test dataset was also oversampled, explaining very good accuracy on the test dataset. CNN Model 1 was reran with oversampled data only for the train.")
@@ -146,13 +146,13 @@ def main():
     st.write("Classical ML classification models were also tested on the flattened pictures dataset, with split train and test of 80 / 20%.")
     st.write("**ML models tested** : Descision Tree, Random Forest, K Neighbors classifier, Linear Discriminant Analysis, SVM")
     ##Results ML
-    image5 = "/CNN_streamlit/CNN_graphs/ML_results_imagesanalysis.png" 
+    image5 = "CNN_streamlit/CNN_graphs/ML_results_imagesanalysis.png" 
     st.write("**Figure 5 :** Results obtained with ML classification models on flattened pictured.")
     st.image(image5, caption="", use_column_width=False)
     st.write("Best results from ML were obtained with **Random Forest model**. Accuracy ranged from 0.62 to 0.72 in ML compared to 0.7 to 0.8 in CNN Models.")
     st.write("Confusion matrices were computed from results obtained in test with the Logistic regression and Random forest model as shown in **Figure 6**.")
     ##Confusion matrices from ML
-    image6 = "/CNN_streamlit/CNN_graphs/confusion_matrice_ML_images_analysis.png" 
+    image6 = "CNN_streamlit/CNN_graphs/confusion_matrice_ML_images_analysis.png" 
     st.write("**Figure 6 :** Confusion matrices obtained in test data.")
     st.image(image6, caption="", use_column_width=False)
     st.write("Based on **Figure 6**, results in test are more accurate in the Random Forest model.")
