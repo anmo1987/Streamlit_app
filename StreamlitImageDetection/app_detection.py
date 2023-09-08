@@ -30,8 +30,7 @@ def main():
     ##LINEAR MODEL
 
     # Load the model
-    with open('StreamlitImageDetection/model_rf_csv_analysis.sav', 'rb') as file:
-        rf_model_csv = pickle.load(file)
+    rf_model_csv = pickle.load(open(f"StreamlitImageDetection/model_rf_csv_analysis.sav", 'rb'))
       # Define a function to preprocess user input
     def preprocess_user_input(user_input):
         # Encode binary features (checkboxes) as 0 or 1
