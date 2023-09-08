@@ -10,3 +10,4 @@ plotly
 sklearn
 pickle
 tensorflow
+joblib
