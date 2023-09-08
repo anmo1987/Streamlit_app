@@ -235,7 +235,7 @@ def main():
     ##write idf
     idf.to_csv("TD_IDF_data.csv")
     ##data_pca
-    data_pca = pd.read_csv("TD_IDF_data.csv", index_col=0)
+    data_pca = pd.read_csv("NLP_stream/TD_IDF_data.csv", index_col=0)
 
     ##Look for value count
     ##Data variable response
