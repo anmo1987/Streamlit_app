@@ -8,6 +8,6 @@ sklearn
 matplotlib
 plotly
 sklearn
-pickle
+pickle5
 tensorflow
 joblib
