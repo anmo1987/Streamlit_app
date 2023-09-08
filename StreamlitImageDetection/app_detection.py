@@ -6,7 +6,6 @@ import random
 import seaborn as sns
 from matplotlib import pyplot as plt
 import os
-import cv2
 import matplotlib.pyplot as plt
 import pickle
 import tensorflow as tf
