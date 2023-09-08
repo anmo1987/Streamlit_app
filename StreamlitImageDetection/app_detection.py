@@ -28,6 +28,8 @@ def main():
     ###Model Importing
     ###function for models
     ##LINEAR MODEL
+    with open("StreamlitImageDetection/rf_ML_csv.bin", "rb") as f:
+        rf_model_csv  = joblib.load(f)
     #with open('model.pkl', 'rb') as file:
         #rf_model_csv = pickle.load(file, protocol=4)
     #rf_model_csv = joblib.load('StreamlitImageDetection/model_rf_csv_analysis.sav')
