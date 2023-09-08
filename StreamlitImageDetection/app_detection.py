@@ -26,7 +26,7 @@ def main():
     ###Model Importing
     ###function for models
     ##LINEAR MODEL
-    with open('/home/annemocoeur/STREAMLIT_APP/StreamlitImageDetection/model_rf_csv_analysis.sav', 'rb') as file:
+    with open('StreamlitImageDetection/model_rf_csv_analysis.sav', 'rb') as file:
         rf_model_csv = pickle.load(file)
 
     # Define a function to preprocess user input
@@ -112,10 +112,10 @@ def main():
     st.write("Provide a colored picture of your skin lesion centered.")
     # SCRIPT FOR MODEL PREDICTION
     ##Upload model
-    model1 = tf.keras.models.load_model('/home/annemocoeur/STREAMLIT_APP/StreamlitImageDetection/cnn_mode1.h5')
-    model1_bal_train = tf.keras.models.load_model('/home/annemocoeur/STREAMLIT_APP/StreamlitImageDetection/cnn_model1_bal_train.h5')
+    model1 = tf.keras.models.load_model('StreamlitImageDetection/cnn_mode1.h5')
+    model1_bal_train = tf.keras.models.load_model('StreamlitImageDetection/cnn_model1_bal_train.h5')
     ##LINEAR MODEL
-    with open('/home/annemocoeur/STREAMLIT_APP/StreamlitImageDetection/model_rf_Image_Analysis.pkl', 'rb') as file:
+    with open('StreamlitImageDetection/model_rf_Image_Analysis.pkl', 'rb') as file:
         rf_model = pickle.load(file)
 
     ##Preprocessing images for CNN & ML models
