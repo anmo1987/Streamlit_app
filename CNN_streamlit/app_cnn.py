@@ -103,9 +103,9 @@ def main():
     st.write("**Model fitting** : each model was fitted using 25 epochs, 202 batch and a call back at patience = 10.")
     ##Results CNN
     st.header("Results from CNN")
-    image2 = "/CNN_streamlit/CNN_graphs/Results_CNN_models.png"
+    image21 = "/CNN_streamlit/CNN_graphs/Results_CNN_models.jpg"
     st.write("**Figure 2 :** Results obtained on the accuracy in test and train dataset over the 25 epochs for the three CNN model.")
-    st.image(image2, caption="", use_column_width=False)
+    st.image(image21, caption="", use_column_width=False)
     st.write("According to results illustrated in **Figure 2**, best results were obtained with **Model 1**, however after the 18 epochs the model started to overfit on train data.")
     
     ##Data augmentation
