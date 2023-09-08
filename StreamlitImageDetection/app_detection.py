@@ -7,7 +7,7 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 import os
 import matplotlib.pyplot as plt
-import pickle
+import pickle5 as pickle
 import tensorflow as tf
 from tensorflow import keras
 import streamlit as st
