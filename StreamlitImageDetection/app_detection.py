@@ -109,7 +109,7 @@ def main():
         print(f"Error during prediction: {str(e)}")
     # Make a prediction using the model
     #prediction_rf_csv = rf_model_csv.predict(preprocessed_input)
-    #rf_pred_csv = cnn_model_labels[prediction_rf_csv[0]]
+    rf_pred_csv = cnn_model_labels[prediction_rf_csv[0]]
 
 
 
