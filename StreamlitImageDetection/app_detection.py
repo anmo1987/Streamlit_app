@@ -101,13 +101,13 @@ def main():
     preprocessed_input = preprocess_user_input(user_input)
 
     # Make a prediction using the model
-    #prediction_rf_csv = rf_model_csv.predict(preprocessed_input)
-    #rf_pred_csv = cnn_model_labels[prediction_rf_csv[0]]
+    prediction_rf_csv = rf_model_csv.predict(preprocessed_input)
+    rf_pred_csv = cnn_model_labels[prediction_rf_csv[0]]
 
 
 
     # Display the predictions
-    #st.write(f"Based on the information provided, it is possible that you may have a **{rf_pred_csv}**.")
+    st.write(f"Based on the information provided, it is possible that you may have a **{rf_pred_csv}**.")
     st.markdown("*This diagnose is predicted from a random forest model trained on over 10k information dataset.*")
     st.write("**For optimal predictions, please upload an image of the skin lesion in the next section.**")
     ###########UPLOAD IMAGE
