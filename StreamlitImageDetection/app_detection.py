@@ -152,9 +152,9 @@ def main():
         st.header("Results :")
         st.write("Bellow are results to your skin lesion predictions based on three models. The two first models are CNN models and the third prediction is provided by Random Forest model.")
         st.write("Below are your predictions for your picture", filename)
-        st.write(f"CNN Model 1 Prediction: **{result_cnn1}**")
-        st.write(f"CNN Model 2 Prediction: **{result_cnn1_aug_train}**")
-        st.write(f"Random Forest Prediction: **same here as above, impossible to load a random forest models saved in pickle or joblib in streamlit cloud (works in local)**")
+        st.write(f"CNN Model 1 Prediction: {result_cnn1}")
+        st.write(f"CNN Model 2 Prediction: {result_cnn1_aug_train}")
+        st.write(f"Random Forest Prediction: (**impossible to load a random forest models saved in pickle or joblib in streamlit cloud (works in local)**")
         #st.write(f"Random Forest Prediction: **{rf_pred}**")
 if __name__ == "__main__":
     main()
