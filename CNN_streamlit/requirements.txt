@@ -6,6 +6,5 @@ random
 seaborn
 sklearn
 matplotlib
-cv2
 tensorflow
 keras
