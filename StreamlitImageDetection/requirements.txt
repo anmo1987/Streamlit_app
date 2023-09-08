@@ -8,6 +8,5 @@ sklearn
 matplotlib
 plotly
 sklearn
-cv2
 pickle
 tensorflow
