@@ -1,0 +1,6 @@
+seaborn
+matplotlib
+plotly
+sklearn
+nltk
+
