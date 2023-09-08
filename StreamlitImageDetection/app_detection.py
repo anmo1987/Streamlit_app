@@ -117,8 +117,8 @@ def main():
     model1 = tf.keras.models.load_model('StreamlitImageDetection/cnn_mode1.h5')
     model1_bal_train = tf.keras.models.load_model('StreamlitImageDetection/cnn_model1_bal_train.h5')
     ##LINEAR MODEL
-    with open('StreamlitImageDetection/model_rf_Image_Analysis.pkl', 'rb') as file:
-        rf_model = pickle.load(file)
+    #with open('StreamlitImageDetection/model_rf_Image_Analysis.pkl', 'rb') as file:
+    #    rf_model = pickle.load(file)
 
     ##Preprocessing images for CNN & ML models
     def preprocess_image_cnn(image_path):
@@ -145,14 +145,14 @@ def main():
         pred_cnn1_aug_train = model1_bal_train.predict(np.expand_dims(image, axis=0))
         result_cnn1_aug_train = cnn_model_labels[np.argmax(pred_cnn1_aug_train)]
         #Prediction in linear models
-        predictions_rf = rf_model.predict(image_flatten)
-        rf_pred = cnn_model_labels[predictions_rf[0]]
+        #predictions_rf = rf_model.predict(image_flatten)
+        #rf_pred = cnn_model_labels[predictions_rf[0]]
         # Display the predictions
         st.header("Results :")
         st.write("Bellow are results to your skin lesion predictions based on three models. The two first models are CNN models and the third prediction is provided by Random Forest model.")
         st.write("Below are your predictions for your picture", filename)
         st.write(f"CNN Model 1 Prediction: **{result_cnn1}**")
         st.write(f"CNN Model 2 Prediction: **{result_cnn1_aug_train}**")
-        st.write(f"Random Forest Prediction: **{rf_pred}**")
+        #st.write(f"Random Forest Prediction: **{rf_pred}**")
 if __name__ == "__main__":
     main()
