@@ -12,6 +12,8 @@ import tensorflow as tf
 from tensorflow import keras
 import streamlit as st
 from keras.models import load_model
+import joblib
+
 
 def main():
     # Set the page configuration
@@ -26,9 +28,9 @@ def main():
     ###Model Importing
     ###function for models
     ##LINEAR MODEL
-    with open('StreamlitImageDetection/model_rf_csv_analysis.sav', 'rb') as file:
-        rf_model_csv = pickle.load(file)
-
+    #with open('model.pkl', 'rb') as file:
+        #rf_model_csv = pickle.load(file, protocol=4)
+    rf_model_csv = joblib.load('model.sav')
     # Define a function to preprocess user input
     def preprocess_user_input(user_input):
         # Encode binary features (checkboxes) as 0 or 1
