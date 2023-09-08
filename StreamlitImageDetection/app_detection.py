@@ -30,6 +30,8 @@ def main():
     ##LINEAR MODEL
     with open("StreamlitImageDetection/rf_ML_csv.bin", "rb") as f:
         rf_model_csv  = joblib.load(f)
+    except Exception as e:
+        print(f"Error loading the model: {str(e)}")
     # Define a function to preprocess user input
     def preprocess_user_input(user_input):
         # Encode binary features (checkboxes) as 0 or 1
