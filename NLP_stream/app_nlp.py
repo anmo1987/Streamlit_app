@@ -71,7 +71,7 @@ def main():
 ##Import data
     st.header("Explore the dataframe")
     st.write("**Table 1** : Raw data")
-    data = pd.read_csv("/home/annemocoeur/STREAMLIT_APP/NLP_stream/Description_diseases_raw_1.csv", encoding_errors="ignore", delimiter=";")
+    data = pd.read_csv("NLP_stream/Description_diseases_raw_1.csv", encoding_errors="ignore", delimiter=";")
 
     st.dataframe(data=data)
 
