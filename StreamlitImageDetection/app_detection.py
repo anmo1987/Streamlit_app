@@ -91,8 +91,7 @@ def main():
         'age': [age],
         'sex': [sex_encoded]
     })
-    st.write("Medical observations or comments to write down bellow:")
-    st.text_input()
+    comment = st.text_input("Medical observations or comments to write down bellow:")
     cnn_model_labels = ['Actinic keratoses / intraepithelial carcinoma, also named Bowens disease ', 'basal cell carcinoma', 'benign keratosis-like lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses)', 'dermatofibroma', 'melanoma ', 'melanocytic nevi', 'vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage)']
 
     # Preprocess user input
